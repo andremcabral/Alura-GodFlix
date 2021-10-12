@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        Imersão Dev - Aula 05
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="page-title">
+        GodFix
+    </h1>
+    <div class="container">
+        <div class="principal">
+            <div class="form-wrapper" align="right">
+                <table border='0' align="center">
+                    <th colspan=2 align="center">Alteração na lista de filmes:</th>
+                    <tr>
+                        <td>
+                            Nome do Filme:
+                        </td>
+                        <td>
+                            <input type="text" id="nomeFilme" name="nomefilme" placeholder="Nome do filme">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Imagem do Filme:
+                        </td>
+                        <td>
+                            <input type="text" id="imagemFilme" name="imagemfilme" placeholder="URL da imagem">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Link do Filme:
+                        </td>
+                        <td>
+                            <input type="text" id="linkFilme" name="linkfilme" placeholder="Link do filme">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onClick="adicionarFilme()">Adicionar Filme</button>
+                        </td>
+                        <td>
+                            <button onClick="removerFilme()">Remover Filme (pelo nome)</button>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+        </div>
+        Filmes cadastrados:
+        <div id="listaFilmes"></div>
+
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
+        <script src="app.js"></script>
+</body>
+
+</html>
